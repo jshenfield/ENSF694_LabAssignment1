@@ -36,12 +36,40 @@ int main(void)
         cin >> velocity;
         if(!cin)
         {
-            cout << "Invlid input. Bye...";
+            cout << "Invalid input. Bye...";
             exit(1);
         }
     }
     
+    create_table(velocity);
+
+    
     return 0;
 }
 
+void create_table(double v){
 
+    std::cout << "Angle\t" << "t\t" << "d" << std::endl;
+    std::cout << "(deg)\t" << "(sec)\t" << "(m)" << std::endl;
+
+    for(int i = 0; i <= (90/5); i++){
+
+        int thetadeg = i*5;
+        double theta = degree_to_radian(i*5);
+        double t = Projectile_travel_time(theta, v);
+        double d = Projectile_travel_distance(theta, v);
+
+        std::cout << thetadeg << "\t" << t << "\t" << d << std::endl;
+    }
+}
+
+double Projectile_travel_time(double a, double v) {
+    return (2*v*sin(a))/G;
+}
+
+double Projectile_travel_distance(double a, double v) { 
+    return ((pow(v, 2) / G) * sin(2 * a));
+}
+double degree_to_radian(double d) {
+    return(d * (PI / 180));
+}
