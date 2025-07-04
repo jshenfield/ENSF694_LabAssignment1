@@ -1,7 +1,8 @@
  /*
  *  lab1exe_C.cpp
  *  ENSF 694 Lab 1 Exercise D
- *
+ *  Completed by: Jack Shenfield
+ *  Development Date: July 3rd, 2025
  */
 
 #include <iostream>
@@ -44,3 +45,13 @@ int main(void)
 }
 
 /* PUT YOUR FUNCTION DEFINITION FOR time_convert HERE. */
+
+void time_convert(int ms_time, int *minutes_ptr, double *seconds_ptr){
+
+  double seconds = (double)(ms_time/1000);
+  int minutes = seconds/60;
+  seconds = seconds - minutes*60;
+
+  *minutes_ptr = minutes;
+  *seconds_ptr = seconds;
+}

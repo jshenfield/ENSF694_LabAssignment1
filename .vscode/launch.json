@@ -8,7 +8,9 @@
       "program": "${fileDirname}/${fileBasenameNoExtension}",
       "args": [],
       "cwd": "${fileDirname}",
-      "stopOnEntry": false
+      "stopOnEntry": false,
+      "preLaunchTask": "build active file"
+
     }
   ]
 }

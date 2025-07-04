@@ -2,7 +2,8 @@
  *  lab1exe_A.cpp
  *  ENSF 694 Lab 1, exercise A
  *  Created by Mahmood Moussavi
- *  Completed by: Student Name
+ *  Completed by: Jack Shenfield
+ *  Development Date: July 3rd, 2025
  */
 
 #include <iostream>
@@ -43,7 +44,7 @@ int main(void)
     
     create_table(velocity);
 
-    
+
     return 0;
 }
 
