@@ -40,6 +40,7 @@ int main(void)
   cout << "Doing conversion for input of " <<  millisec <<" milliseconds ... \n", millisec;
 
   /* MAKE A CALL TO time_convert HERE. */
+  time_convert(millisec, &minutes, &seconds);
   cout << "That is equivalent to " << minutes << " minute(s) and " << seconds << " second(s).\n";
   return 0;
 }
