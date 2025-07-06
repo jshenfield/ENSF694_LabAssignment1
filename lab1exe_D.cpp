@@ -1,3 +1,10 @@
+ /*
+ *  lab1exe_D.cpp
+ *  ENSF 694 Lab 1 Exercise D
+ *  Completed by: Jack Shenfield
+ *  Development Date: July 5th, 2025
+ */
+
 #include <iostream>
 #include <iomanip>
 using namespace std;
@@ -83,11 +90,21 @@ double add_them (double arg[5])
 
 void good_copy(double *dest, double *source, int n)
 {
+
+    for(int i = 0; i < n; i++){
+        dest[i] = source[i];
+    }
+
     // mising code -- students must complete the implementation of this funcion.
 }
 
 
 void print_matrix(double matrix[][COL_SIZE], int rows)
 {
+    for(int i = 0; i < rows; i++){
+        cout << endl;
+        for(int j = 0; j < COL_SIZE; j++)
+            cout << matrix[i][j] << "\t";
+    }
     // mising code -- students must complete the implementation of this funcion.
 }

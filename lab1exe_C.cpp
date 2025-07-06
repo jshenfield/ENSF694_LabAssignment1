@@ -1,6 +1,6 @@
  /*
  *  lab1exe_C.cpp
- *  ENSF 694 Lab 1 Exercise D
+ *  ENSF 694 Lab 1 Exercise C
  *  Completed by: Jack Shenfield
  *  Development Date: July 3rd, 2025
  */
