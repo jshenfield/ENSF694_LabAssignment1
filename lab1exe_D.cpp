@@ -90,7 +90,7 @@ double add_them (double arg[5])
 
 void good_copy(double *dest, double *source, int n)
 {
-
+    // for each index in dest, copy the same value from the index in source
     for(int i = 0; i < n; i++){
         dest[i] = source[i];
     }
@@ -100,10 +100,10 @@ void good_copy(double *dest, double *source, int n)
 
 
 void print_matrix(double matrix[][COL_SIZE], int rows)
-{
+{   // for print statement runs for the # of rows
     for(int i = 0; i < rows; i++){
-        cout << endl;
-        for(int j = 0; j < COL_SIZE; j++)
+        cout << endl; // new line
+        for(int j = 0; j < COL_SIZE; j++) // loop through each value in the row, tabbing over each time.
             cout << matrix[i][j] << "\t";
     }
     // mising code -- students must complete the implementation of this funcion.

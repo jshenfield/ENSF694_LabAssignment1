@@ -49,10 +49,10 @@ int main(void)
 
 void time_convert(int ms_time, int *minutes_ptr, double *seconds_ptr){
 
-  double seconds = (double)(ms_time/1000);
-  int minutes = seconds/60;
-  seconds = seconds - minutes*60;
+  double seconds = (double)(ms_time/1000); // seconds is the milliseconds divided by 100
+  int minutes = seconds/60; // number of minutes is the seconds/60 with no remainder
+  seconds = seconds - minutes*60; // new seconds value, finds the remainder
 
-  *minutes_ptr = minutes;
-  *seconds_ptr = seconds;
+  *minutes_ptr = minutes; // call back to pointer
+  *seconds_ptr = seconds; // call back to pointer
 }

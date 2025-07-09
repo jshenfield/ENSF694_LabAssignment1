@@ -50,17 +50,19 @@ int main(void)
 
 void create_table(double v){
 
+    // Print titles
     std::cout << "Angle\t" << "t\t" << "d" << std::endl;
     std::cout << "(deg)\t" << "(sec)\t" << "(m)" << std::endl;
 
+    // Print 5 degree increments, up to 90 degrees
     for(int i = 0; i <= (90/5); i++){
 
-        int thetadeg = i*5;
-        double theta = degree_to_radian(i*5);
-        double t = Projectile_travel_time(theta, v);
-        double d = Projectile_travel_distance(theta, v);
+        int thetadeg = i*5; // angle in deg
+        double theta = degree_to_radian(i*5); // angle in rad
+        double t = Projectile_travel_time(theta, v); // time
+        double d = Projectile_travel_distance(theta, v); // distance
 
-        std::cout << thetadeg << "\t" << t << "\t" << d << std::endl;
+        std::cout << thetadeg << "\t" << t << "\t" << d << std::endl; // print statement
     }
 }
 
