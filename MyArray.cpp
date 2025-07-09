@@ -1,3 +1,10 @@
+ /*
+ *  MyArray.cpp
+ *  ENSF 694 Lab 1 Exercise F
+ *  Completed by: Jack Shenfield
+ *  Development Date: July 5th, 2025
+ */
+
 #include "MyArray.h"
 
 int search(const MyArray* myArray, int obj){
